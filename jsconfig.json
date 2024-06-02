@@ -1,7 +1,12 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+ "compilerOptions": {
+  "paths": {
+   "@/*": [
+    "./src/*"
+   ],
+   "@app/*": [
+    "./src/app/*"
+   ] // Add this line to map the '@app' path to './src/app'
   }
+ }
 }
