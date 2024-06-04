@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        trebuchet: ["Trebuchet MS", "sans-serif"],
+        cormorant: ["Cormorant", "serif"],
+      },
       colors: {
         pcream: "#FFFBF5",
         pgreen: "#53582F",
         pyellow: "#E49806",
         pred: "#B94514",
         ppurple: "#411436",
+        plightyellow: "#FFDFA3",
+      },
+      backgroundImage: {
+        fita: "url('/fita-bg.png')",
       },
     },
   },
