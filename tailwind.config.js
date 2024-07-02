@@ -25,5 +25,12 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'bg-pgreen',
+    'bg-pyellow',
+    'bg-pred',
+    'bg-ppurple',
+    'bg-plightyellow',
+  ],
   plugins: [],
 };

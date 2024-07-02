@@ -11,16 +11,16 @@ const AboutMe = () => {
 
                 <article>
                     <ul className='flex flex-col gap-4'>
-                        <li className='bg-plightyellow w-[416px] h-[40px] flex justify-center items-center text-pgreen text-[20px] rounded-[10px]'>
+                        <li className='bg-plightyellow w-[600px] h-[40px] flex justify-center items-center text-pred text-[20px] rounded-[10px]'>
                             Minhas habilidades
                         </li>
-                        <li className='bg-plightyellow w-[416px] h-[40px] flex justify-center items-center text-pgreen text-[20px] rounded-[10px]'>
+                        <li className='bg-plightyellow w-[600px] h-[40px] flex justify-center items-center text-pred text-[20px] rounded-[10px]'>
                             Minhas habilidades
                         </li>
-                        <li className='bg-plightyellow w-[416px] h-[40px] flex justify-center items-center text-pgreen text-[20px] rounded-[10px]'>
+                        <li className='bg-plightyellow w-[600px] h-[40px] flex justify-center items-center text-pred text-[20px] rounded-[10px]'>
                             Minhas habilidades
                         </li>
-                        <li className='bg-plightyellow w-[416px] h-[40px] flex justify-center items-center text-pgreen text-[20px] rounded-[10px]'>
+                        <li className='bg-plightyellow w-[600px] h-[40px] flex justify-center items-center text-pred text-[20px] rounded-[10px]'>
                             Minhas habilidades
                         </li>
                     </ul>

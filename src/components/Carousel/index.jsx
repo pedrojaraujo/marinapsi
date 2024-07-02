@@ -9,7 +9,7 @@ import { cardData } from "@/json/cards";
 const Carousel = () => {
     return (
         <Swiper
-            spaceBetween={10}
+            spaceBetween={1}
             slidesPerView={4}
             pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}

@@ -3,8 +3,8 @@ import Banner from "../Banner";
 
 const HeroSection = () => {
   return (
-    <section className="bg-pcream h-[720px] flex justify-center items-center">
-      <div className="absolute left-[420px]">
+    <section className="bg-pcream h-[720px] mt-28 flex justify-center items-center">
+      <div className="absolute left-[310px]">
         <Image
           src="/foto1.png"
           width={573}
@@ -12,7 +12,7 @@ const HeroSection = () => {
           alt="Foto de Marina Araujo, uma mulher negra, sorrindo, com cabelos cacheados, usando um vestido roxo e marrom, com um fundo de estante e  folhas verdes."
         />
       </div>
-      <div className="absolute right-[410px]">
+      <div className="absolute right-[310px]">
         <Banner
           title="Psicanálise para uma Jornada Racial Positiva"
           text="Explore a jornada para o autoconhecimento e cura emocional. Agende sua sessão e inicie sua jornada de transformação hoje mesmo com uma psicanalista dedicada a questões raciais."

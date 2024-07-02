@@ -36,4 +36,22 @@ export const cardData = [
     bg: "bg-pgreen",
     text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",
   },
+  {
+    id: 7,
+    urlImg: "/card-bg2.png",
+    bg: "bg-ppurple",
+    text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",
+  },
+  {
+    id: 8,
+    urlImg: "/card-bg1.png",
+    bg: "bg-pyellow",
+    text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",
+  },
+  {
+    id: 8,
+    urlImg: "/card-bg2.png",
+    bg: "bg-ppurple",
+    text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",
+  },
 ];
