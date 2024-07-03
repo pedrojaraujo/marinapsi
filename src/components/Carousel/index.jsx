@@ -9,11 +9,32 @@ import { cardData } from "@/json/cards";
 const Carousel = () => {
     return (
         <Swiper
-            spaceBetween={1}
-            slidesPerView={4}
+            spaceBetween={50} // Ajuste o espaço entre slides conforme necessário
             pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+                // Quando a largura da janela é >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // Quando a largura da janela é >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // Quando a largura da janela é >= 768px
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                // Quando a largura da janela é >= 1024px
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50
+                }
+            }}
         >
             {cardData.map((card) => (
                 <SwiperSlide key={card.id}>

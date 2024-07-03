@@ -1,0 +1,29 @@
+@media (min-width: 640px) {
+    .marinaFoto01 {
+        width: 273px;
+    }
+}
+
+@media (min-width: 768px) {
+    .marinaFoto01 {
+        width: 306px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .marinaFoto01 {
+        width: 373px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .marinaFoto01 {
+        width: 473px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .marinaFoto01 {
+        width: 573px;
+    }
+}

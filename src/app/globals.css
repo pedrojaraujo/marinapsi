@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('../styles/HeroSection/HeroSection.css');
+
 
 :root {}

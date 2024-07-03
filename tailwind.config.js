@@ -23,6 +23,9 @@ module.exports = {
       backgroundImage: {
         fita: "url('/fita-bg.png')",
       },
+      screens: {
+        '2xxl': '1900px',
+      }
     },
   },
   safelist: [
