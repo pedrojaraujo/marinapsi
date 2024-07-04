@@ -49,7 +49,7 @@ export const cardData = [
     text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",
   },
   {
-    id: 8,
+    id: 9,
     urlImg: "/card-bg2.png",
     bg: "bg-ppurple",
     text: "Estratégias de enfrentamento para lidar com a ansiedade e o estresse diário.",

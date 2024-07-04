@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='flex gap-5'>
                 <a href="https://www.facebook.com/profile.php?id=1395171534" className='text-pcream'> <FacebookIcon  style={{ fontSize: '65px' }}/> </a>
                 <a href="https://www.instagram.com/marinaaraujo.psi/?igsh=MW9ka2Jnd2VyeXVzZQ%3D%3D" className='text-pcream'> <InstagramIcon  style={{ fontSize: '65px' }} /> </a>
-                <a href="https://www.instagram.com/marinaaraujo.psi/?igsh=MW9ka2Jnd2VyeXVzZQ%3D%3D" className='text-pcream'> <WhatsAppIcon  style={{ fontSize: '65px' }} /> </a>
+                <a href="https://wa.me/5511987046526" className='text-pcream'> <WhatsAppIcon  style={{ fontSize: '65px' }} /> </a>
             </div>
         </section>
     );
