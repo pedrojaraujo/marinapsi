@@ -1,5 +1,29 @@
+@media (min-width: 680px) {
+    .about__img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about__img {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about__img {
+        width: 300px;
+    }
+}
+
 @media (min-width: 1280px) {
     .about__img {
         width: 300px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .about__img {
+        width: 350px;
     }
 }

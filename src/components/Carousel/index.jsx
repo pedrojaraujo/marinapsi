@@ -21,16 +21,20 @@ const Carousel = () => {
                 },
                 // Quando a largura da janela é >= 640px
                 640: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
+                    slidesPerView: 3,
+                    spaceBetween: 180
                 },
                 // Quando a largura da janela é >= 768px
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 40
+                    spaceBetween: 20
                 },
                 // Quando a largura da janela é >= 1024px
                 1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50
+                },
+                1280: {
                     slidesPerView: 4,
                     spaceBetween: 50
                 },

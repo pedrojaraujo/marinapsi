@@ -1,5 +1,29 @@
+@media (min-width: 680px) {
+    .space__img {
+        width: 538px;
+    }
+}
+
+@media (min-width: 768px) {
+    .space__img {
+        width: 538px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .space__img {
+        width: 438px;
+    }
+}
+
 @media (min-width: 1280px) {
     .space__img {
         width: 538px;
+    }
+}
+
+@media (min-width: 1535px) {
+    .space__img {
+        width: 738px;
     }
 }

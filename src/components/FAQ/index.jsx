@@ -9,7 +9,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 const FAQ = () => {
     return (
         <section className="bg-pred w-full h-auto pb-28">
-            <h2 className="font-cormorant text-[48px] text-center h-12 pt-20 text-pcream">Perguntas frequentes</h2>
+            <h2 className="font-cormorant text-[48px] md:text-[35px] sm:text-[35px] text-center h-12 pt-20 text-pcream">Perguntas frequentes</h2>
             <section className='mt-[120px] w-full flex flex-col items-center gap-3'>
                 <Accordion defaultExpanded className='w-10/12 font-trebuchet text-pred bg-plightyellow '>
                     <AccordionSummary
