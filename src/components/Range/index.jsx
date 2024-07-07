@@ -5,7 +5,6 @@ const Range = () => {
             justify-center 
             items-center 
             w-full
-            h-[auto]
             2xl:h-[170px] 
             xl:h-[170px] 
             lg:h-[130px] 
@@ -21,17 +20,17 @@ const Range = () => {
             <p className="
                 w-full
                 text-center
-                text-[18px]
                 2xl:w-3/4 
                 xl:w-3/4 
                 lg:w-3/5  
                 md:w-3/5 
                 sm:w-3/5 
-                lg:text-[24px] 
-                md:text-[22px] 
+                text-[14px]
                 sm:text-[16px] 
-                2xl:text-[32px] 
+                md:text-[22px] 
+                lg:text-[24px] 
                 xl:text-[32px] 
+                2xl:text-[32px] 
                 text-pcream 
                 font-cormorant
             ">
@@ -41,4 +40,4 @@ const Range = () => {
     )
 }
 
-export default Range
+export default Range;

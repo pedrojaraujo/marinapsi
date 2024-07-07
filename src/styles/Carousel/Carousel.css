@@ -1,0 +1,16 @@
+/* Exemplo de CSS para estilizar as setas do react-slick */
+.slick-prev,
+.slick-next {
+  font-size: 24px; /* Tamanho do ícone */
+  color: #000; /* Cor do ícone */
+  z-index: 1; /* Garante que as setas estejam na frente dos slides */
+  cursor: pointer; /* Mostra cursor de ponteiro ao passar sobre as setas */
+}
+
+.slick-prev {
+  left: 10px; /* Posicionamento da seta de voltar */
+}
+
+.slick-next {
+  right: 10px; /* Posicionamento da seta de avançar */
+}

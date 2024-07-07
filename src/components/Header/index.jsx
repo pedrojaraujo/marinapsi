@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import Button from '../Button';
 
 const Header = ({ scrollToRefs }) => {
@@ -16,14 +17,15 @@ const Header = ({ scrollToRefs }) => {
   };
 
   return (
-    <nav className="bg-pcream px-2 sm:px-4 py-5 md:py-10 fixed w-full top-0 z-10">
+    <nav className="bg-pcream px-2 sm:px-4 py-3 md:py-4 fixed w-full top-0 z-10">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div>
           <Image
             src="/logo.png"
-            width={194}
-            height={94}
+            width={150}
+            height={75}
             alt="Logo onde está escrito Marina Araujo"
+            className="w-36 h-18 sm:w-48 sm:h-24"
           />
         </div>
         {/* Menu sanduíche para telas lg e menores */}
@@ -35,11 +37,24 @@ const Header = ({ scrollToRefs }) => {
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}
             onClose={closeMenu}
+            PaperProps={{
+              style: {
+                width: '80%',
+                maxWidth: 'none',
+                backgroundColor: '#F5F5F5'
+              },
+            }}
           >
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.homeRef.current.scrollIntoView({ behavior: 'smooth' }); }}>Início</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.consultsRef.current.scrollIntoView({ behavior: 'smooth' }); }}>Experiência</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); }}>Sobre mim</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.faqRef.current.scrollIntoView({ behavior: 'smooth' }); }}>Perguntas frequentes</MenuItem>
+            <div className="flex justify-between items-center p-2">
+              <div>Menu</div>
+              <IconButton edge="end" color="inherit" aria-label="close" onClick={closeMenu}>
+                <CloseIcon />
+              </IconButton>
+            </div>
+            <MenuItem onClick={() => { closeMenu(); scrollToRefs.homeRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Início</MenuItem>
+            <MenuItem onClick={() => { closeMenu(); scrollToRefs.consultsRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Experiência</MenuItem>
+            <MenuItem onClick={() => { closeMenu(); scrollToRefs.aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Sobre mim</MenuItem>
+            <MenuItem onClick={() => { closeMenu(); scrollToRefs.faqRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Perguntas frequentes</MenuItem>
           </Menu>
         </div>
         {/* Botões de navegação para telas maiores que lg */}
