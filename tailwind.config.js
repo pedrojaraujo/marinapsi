@@ -23,8 +23,10 @@ module.exports = {
       backgroundImage: {
         fita: "url('/fita-bg.png')",
         fita2: "url('/fita2-bg.png')",
+        fita3: "url('/fita3-bg.png')",
       },
       screens: {
+        'lsm': '320px',
         '2xxl': '1900px',
       }
     },
