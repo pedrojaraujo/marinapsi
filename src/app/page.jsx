@@ -14,12 +14,14 @@ export default function Home() {
   const faqRef = useRef(null);
   const consultsRef = useRef(null);
   const aboutMeRef = useRef(null);
+  const spacRef = useRef(null);
 
   const scrollToRefs = {
     homeRef,
     faqRef,
     consultsRef,
-    aboutMeRef
+    aboutMeRef,
+    spacRef
   };
 
   return (
@@ -39,7 +41,9 @@ export default function Home() {
       <div ref={faqRef}>
         <FAQ />
       </div>
-      <Space />F
+      <div ref={spacRef}>
+        <Space />
+      </div>
       <Footer />
     </main>
   );

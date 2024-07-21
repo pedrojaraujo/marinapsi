@@ -1,6 +1,8 @@
 import Image from "next/image";
 import PlaceIcon from "@mui/icons-material/Place";
 import Link from "next/link";
+import Paragraph from "../Paragraph";
+import { Title } from "../Titles";
 
 const Space = () => {
   return (
@@ -28,32 +30,30 @@ const Space = () => {
         sm:flex-col
         sm:w-full
         sm:gap-24
+        lsm:h-auto
+        lsm:py-20
+        lsm:flex-col
+        lsm:w-full
+        lsm:gap-24
         bg-pcream 
         items-center  
         "
     >
-      <section className="2xl:w-1/3 xl:w-1/3 md:w-2/3 sm:w-2/3 text-pred flex flex-col gap-8 md:gap-8">
-      <h2
-          className="text-pred  text-4xl md:text-3xl lg:text-2xl xl:text-2xl 2xl:text-3xl  lsm:text-[16px] 
-        lsm:font-bold "
-        >
-         Conheça meu espaço
-        </h2>
-        <p className="text-pred  text-xl md:text-lg xl:text-lg 2xl:text-2xl hyphens-auto text-justify">
-          Nosso consultório de psicanálise oferece um ambiente acolhedor e
-          seguro, perfeito para sessões terapêuticas. Com fácil acesso, o espaço
-          é confortável e privativo. Agende sua consulta e permita-se vivenciar
-          um atendimento personalizado, focado no seu bem-estar e
-          desenvolvimento emocional. Venha nos conhecer e descubra um espaço
-          dedicado à sua saúde mental.
-        </p>
+      <section className="2xl:w-1/3 xl:w-1/3 md:w-4/5 sm:w-4/5 lsm:w-4/5 text-pred flex flex-col gap-8 md:gap-8">
+        <Title>
+          Conheça meu espaço
+        </Title>
+        <Paragraph>
+          Meu consultório está localizado em Perdizes, a uma quadra da PUC, você encontrará um espaço acolhedor, tranquilo e com privacidade para te receber. Para chegar, colocar no mapa “Rua Cardoso de Almeida, 1005 – Perdizes”, esta localização apontará em frente a vila. Estou a uma quadra da PUC - Campus Monte Alegre
+
+        </Paragraph>
         <Link
-          className="leading-snug underline 2xl:text-[22px] xl:text-[18px] lg:text-[18px] md:text-[16px]"
-          style={{ textUnderlineOffset: "4px" }}
+          className="font-bold leading-snug underline 3xl:text-[20px] 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px] lsm:text-[14px] lsm:text-center"
+          style={{ textUnderlineOffset: "6px" }}
           target="_blank"
-          href="https://maps.app.goo.gl/xQoK45X2kmZPr7bJ8"
+          href="https://maps.app.goo.gl/VpdZJRWxPNmxCseB8"
         >
-          Localizado na Rua das Rosas, 42, Bairro Harmonia{" "}
+          Travessa Jeno Christiano Rolfsen, Casa nº4, Perdizes{" "}
           <PlaceIcon className="text-pred" />
         </Link>
       </section>

@@ -20,11 +20,47 @@
     text-align: center;
 }
 
-/* Estilos responsivos para tablets (768px) */
+/* Estilos responsivos para telas de 2X large (1440px) */
+@media (max-width: 1440px) {
+    .card_carrossel {
+        width: 260px; /* Ajuste para telas grandes */
+        height: 380px;
+    }
+
+    .card_carrossel p {
+        font-size: 17px; /* Ajusta o tamanho do texto */
+    }
+}
+
+/* Estilos responsivos para telas extra grandes (1280px) */
+@media (max-width: 1280px) {
+    .card_carrossel {
+        width: 250px; /* Ajuste para telas extra grandes */
+        height: 360px;
+    }
+
+    .card_carrossel p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+}
+
+/* Estilos responsivos para telas grandes (1024px) */
+@media (max-width: 1024px) {
+    .card_carrossel {
+        width: 240px; /* Ajuste para telas grandes */
+        height: 360px;
+    }
+
+    .card_carrossel p {
+        font-size: 15px; /* Ajusta o tamanho do texto */
+    }
+}
+
+/* Estilos responsivos para telas médias (768px) */
 @media (max-width: 768px) {
     .card_carrossel {
         width: 230px; /* Ajuste para tablets */
-        height: 330px;
+        height: 360px;
     }
 
     .card_carrossel p {
@@ -32,14 +68,26 @@
     }
 }
 
-/* Estilos responsivos para smartphones (até 492px) */
-@media (max-width: 492px) {
+/* Estilos responsivos para telas pequenas (480px) */
+@media (max-width: 480px) {
     .card_carrossel {
-        width: 60%; /* Tamanho ajustado para smartphones */
-        height: auto;
+        width: 60%; /* Tamanho ajustado para smartphones pequenos */
+        height: 360px;
     }
 
     .card_carrossel p {
-        font-size: 14px; /* Ajusta o tamanho do texto para smartphones */
+        font-size: 15px; /* Ajusta o tamanho do texto */
+    }
+}
+
+/* Estilos responsivos para telas extra pequenas (320px) */
+@media (max-width: 320px) {
+    .card_carrossel {
+        width: 80%; /* Tamanho ajustado para smartphones muito pequenos */
+        height: 360px;
+    }
+
+    .card_carrossel p {
+        font-size: 14px; /* Ajusta o tamanho do texto */
     }
 }

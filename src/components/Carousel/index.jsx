@@ -8,6 +8,17 @@ import Card from "../Card";
 import { cardData } from "@/json/cards";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 
+// Custom Arrow Components
+const PrevArrow = (props) => {
+  const { className, onClick } = props;
+  return <ArrowBack className={className} onClick={onClick} />;
+};
+
+const NextArrow = (props) => {
+  const { className, onClick } = props;
+  return <ArrowForward className={className} onClick={onClick} />;
+};
+
 const Carousel = () => {
   const settings = {
     dots: true,
@@ -17,38 +28,58 @@ const Carousel = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1920, // 3xl
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1440, // 2xl
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1280, // xl
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1024, // lg
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // md
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 480, // sm
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 320, // xs
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
     ],
-    prevArrow: <ArrowBack className="slick-prev" />, // Ícone de seta para voltar
-    nextArrow: <ArrowForward className="slick-next" />, // Ícone de seta para avançar
+    prevArrow: <PrevArrow />, // Custom prev arrow
+    nextArrow: <NextArrow />, // Custom next arrow
   };
-  
 
   return (
     <Slider {...settings}>

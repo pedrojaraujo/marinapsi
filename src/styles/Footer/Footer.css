@@ -1,4 +1,22 @@
+@media (min-width: 320px) {
+    .iconFooter {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 480px) {
+    .iconFooter {
+        font-size: 25px;
+    }
+}
+
 @media (min-width: 640px) {
+    .iconFooter {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
     .iconFooter {
         font-size: 29px;
     }
@@ -6,18 +24,24 @@
 
 @media (min-width: 1024px) {
     .iconFooter {
-        font-size: 34px;
+        font-size: 29px;
     }
 }
 
 @media (min-width: 1280px) {
     .iconFooter {
-        font-size: 42px;
+        font-size: 34px;
     }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1440px) {
     .iconFooter {
-        font-size: 50px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .iconFooter {
+        font-size: 40px;
     }
 }

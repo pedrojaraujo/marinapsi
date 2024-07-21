@@ -18,7 +18,7 @@ const Header = ({ scrollToRefs }) => {
 
   return (
     <nav className="bg-pcream px-2 sm:px-4 py-3 md:py-4 fixed w-full top-0 z-10">
-      <div className="container flex flex-wrap justify-center items-center mx-auto  gap-[40%] ">
+      <div className="container flex flex-wrap justify-center items-center mx-auto gap-[40%]">
         <div>
           <Image
             src="/logo.png"
@@ -29,7 +29,13 @@ const Header = ({ scrollToRefs }) => {
         </div>
         {/* Menu sanduíche para telas lg e menores */}
         <div className="flex lg:hidden">
-          <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleMenu}>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            onClick={toggleMenu}
+            sx={{ color: '#B94514' }} // Cor do ícone do menu sanduíche
+          >
             <MenuIcon />
           </IconButton>
           <Menu
@@ -40,20 +46,60 @@ const Header = ({ scrollToRefs }) => {
               style: {
                 width: '80%',
                 maxWidth: 'none',
-                backgroundColor: '#F5F5F5'
+                color: '#B94514',
+                backgroundColor: '#FFFBF5',
+                fontFamily: 'Cormorant, serif',
               },
             }}
           >
             <div className="flex justify-between items-center p-2">
-              <div>Menu</div>
-              <IconButton edge="end" color="inherit" aria-label="close" onClick={closeMenu}>
+              <div className="font-cormorant">Menu</div>
+              <IconButton
+                edge="end"
+                color="inherit"
+                aria-label="close"
+                onClick={closeMenu}
+                sx={{ color: '#B94514' }} // Cor do ícone de fechar
+              >
                 <CloseIcon />
               </IconButton>
             </div>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.homeRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Início</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.consultsRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Experiência</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.aboutMeRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Sobre mim</MenuItem>
-            <MenuItem onClick={() => { closeMenu(); scrollToRefs.faqRef.current.scrollIntoView({ behavior: 'smooth' }); }} className="py-2 px-4">Perguntas frequentes</MenuItem>
+            <MenuItem
+              onClick={() => {
+                closeMenu();
+                scrollToRefs.homeRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="py-2 px-4 font-cormorant"
+            >
+              Início
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                closeMenu();
+                scrollToRefs.consultsRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="py-2 px-4 font-cormorant"
+            >
+              Experiência
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                closeMenu();
+                scrollToRefs.aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="py-2 px-4 font-cormorant"
+            >
+              Sobre mim
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                closeMenu();
+                scrollToRefs.faqRef.current.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="py-2 px-4 font-cormorant"
+            >
+              Perguntas frequentes
+            </MenuItem>
           </Menu>
         </div>
         {/* Botões de navegação para telas maiores que lg */}
@@ -62,7 +108,7 @@ const Header = ({ scrollToRefs }) => {
           <Button text="Experiência" scrollToRef={scrollToRefs.consultsRef} />
           <Button text="Sobre mim" scrollToRef={scrollToRefs.aboutMeRef} />
           <Button text="F.A.Q" scrollToRef={scrollToRefs.faqRef} />
-          <Button text="Consultório" scrollToRef={scrollToRefs.faqRef} />
+          <Button text="Consultório" scrollToRef={scrollToRefs.spacRef} />
         </div>
       </div>
     </nav>

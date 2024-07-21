@@ -1,100 +1,121 @@
 /* Estilos para telas menores que 640px */
 .container__foto__herosec {
+  width: 100%;
+  height: 50vh;
+  /* Ajuste conforme necessário */
+  background-image: url('../../../public/foto11_lg.png');
+  /* Imagem específica para mobile, se aplicável */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container__text__herosec {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Estilos para telas de 640px a 767px */
+
+@media (min-width: 640px) {
+  .container__foto__herosec {
     width: 100%;
-    height: 50vh; /* Ajuste conforme necessário */
-    background-image: url('../../../public/foto11_lg.png'); /* Imagem específica para mobile, se aplicável */
+    height: 100%;
+    background-image: url('../../../public/foto112_lg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  
+
   .container__text__herosec {
-    width: 90%;
     margin: auto;
-    padding: 1rem;
+    width: 90%;
   }
-  
-  /* Estilos para telas de 640px a 767px */
-  @media (min-width: 640px) {
-    .container__foto__herosec {
-      width: 100%;
-      height: 100%;
-      background-image: url('../../../public/foto11_lg.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container__text__herosec {
-      margin: auto;
-      width: 90%;
-    }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .container__foto__herosec {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/foto112_lg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  
-  /* Estilos para telas de 768px a 1023px */
-  @media (min-width: 768px) {
-    .container__foto__herosec {
-      width: 100%;
-      background-image: url('../../../public/foto11_lg.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container__text__herosec {
-      align-items: center;
-      width: 90%;
-    }
+
+  .container__text__herosec {
+    margin: auto;
+    width: 90%;
   }
-  
-  /* Estilos para telas de 1024px a 1279px */
-  @media (min-width: 1024px) {
-    .container__foto__herosec {
-      width: 100%;
-      background-image: url('../../../public/foto11_lg.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container__text__herosec {
-      align-items: center;
-      width: 90%;
-    }
+}
+
+/* Estilos para telas de 768px a 1023px */
+@media (min-width: 1024px) {
+  .container__foto__herosec {
+    width: 100%;
+    background-image: url('../../../public/foto112_lg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  
-  /* Estilos para telas de 1280px a 1535px */
-  @media (min-width: 1280px) {
-    .container__foto__herosec {
-      width: 50%;
-      height: 100%;
-      margin-block: 0;
-      background-image: url('../../../public/foto11.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container__text__herosec {
-      align-items: flex-start;
-      width: 50%;
-    }
+
+  .container__text__herosec {
+    align-items: center;
+    width: 90%;
   }
-  
-  /* Estilos para telas maiores que 1536px */
-  @media (min-width: 1536px) {
-    .container__foto__herosec {
-      width: 50%;
-      height: 100%;
-      margin-block: 0;
-      background-image: url('../../../public/foto11.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container__text__herosec {
-      width: 50%;
-    }
+}
+
+/* Estilos para telas de 1024px a 1279px */
+@media (min-width: 1280px) {
+  .container__foto__herosec {
+    width: 100%;
+    background-image: url('../../../public/foto112_lg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  
+
+  .container__text__herosec {
+    align-items: center;
+    width: 90%;
+  }
+}
+
+/* Estilos para telas de 1280px a 1535px */
+@media (min-width: 1440px) {
+  .container__foto__herosec {
+    width: 50%;
+    height: 100%;
+    margin-block: 0;
+    background-image: url('../../../public/foto11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container__text__herosec {
+    align-items: flex-start;
+    width: 50%;
+  }
+}
+
+/* Estilos para telas maiores que 1536px */
+@media (min-width: 1920px) {
+  .container__foto__herosec {
+    width: 50%;
+    height: 100%;
+    margin-block: 0;
+    background-image: url('../../../public/foto11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container__text__herosec {
+    width: 50%;
+  }
+}

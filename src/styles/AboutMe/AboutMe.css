@@ -1,4 +1,16 @@
-@media (min-width: 680px) {
+@media (min-width: 320px) {
+    .about__img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 480px) {
+    .about__img {
+        width: 210px;
+    }
+}
+
+@media (min-width: 640px) {
     .about__img {
         width: 250px;
     }
@@ -22,9 +34,15 @@
     }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1440px) {
     .about__img {
         width: 250px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .about__img {
+        width: 350px;
     }
 }
 

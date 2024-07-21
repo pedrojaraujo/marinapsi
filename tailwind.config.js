@@ -21,14 +21,27 @@ module.exports = {
         plightyellow: "#FFDFA3",
       },
       backgroundImage: {
-        fita: "url('/fita-bg.png')",
-        fita2: "url('/fita2-bg.png')",
-        fita3: "url('/fita3-bg.png')",
+        fita: "url('/fita-bg.svg')",
+        fita2: "url('/fita-bg2.svg')",
+        fita3: "url('/fita-bg3.svg')",
       },
       screens: {
         'lsm': '320px',
-        '2xxl': '1900px',
-      }
+        'sm': '480px',  // Small screens
+        'md': '768px',  // Medium screens
+        'lg': '1024px', // Large screens
+        'xl': '1280px', // Extra large screens
+        '2xl': '1440px', // 2X large screens
+        '3xl': '1920px', // 3X large screens
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            'text-align': 'justify',
+            'hyphens': 'none',
+          },
+        },
+      },
     },
   },
   safelist: [
@@ -38,5 +51,7 @@ module.exports = {
     'bg-ppurple',
     'bg-plightyellow',
   ],
-  plugins: [],
+  plugins: [
+
+  ],
 };

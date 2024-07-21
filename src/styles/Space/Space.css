@@ -1,6 +1,16 @@
-@media (min-width: 680px) {
+@media (min-width: 320px) {
     .space__img {
-        width: 538px;
+        width: 238px;
+    }
+}
+@media (min-width: 480px) {
+    .space__img {
+        width: 338px;
+    }
+}
+@media (min-width: 640px) {
+    .space__img {
+        width: 438px;
     }
 }
 
@@ -12,17 +22,23 @@
 
 @media (min-width: 1024px) {
     .space__img {
-        width: 438px;
+        width: 538px;
     }
 }
 
 @media (min-width: 1280px) {
     .space__img {
+        width: 438px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .space__img {
         width: 538px;
     }
 }
 
-@media (min-width: 1535px) {
+@media (min-width: 1920px) {
     .space__img {
         width: 738px;
     }
