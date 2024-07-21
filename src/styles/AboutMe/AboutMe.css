@@ -12,18 +12,26 @@
 
 @media (min-width: 1024px) {
     .about__img {
-        width: 300px;
+        width: 250px;
     }
 }
 
 @media (min-width: 1280px) {
     .about__img {
-        width: 300px;
+        width: 250px;
     }
 }
 
 @media (min-width: 1536px) {
     .about__img {
-        width: 350px;
+        width: 250px;
     }
 }
+
+.text-pred {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+  }
+  

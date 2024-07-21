@@ -18,14 +18,13 @@ const Header = ({ scrollToRefs }) => {
 
   return (
     <nav className="bg-pcream px-2 sm:px-4 py-3 md:py-4 fixed w-full top-0 z-10">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
+      <div className="container flex flex-wrap justify-center items-center mx-auto  gap-[40%] ">
         <div>
           <Image
             src="/logo.png"
             width={150}
             height={75}
             alt="Logo onde está escrito Marina Araujo"
-            className="w-36 h-18 sm:w-48 sm:h-24"
           />
         </div>
         {/* Menu sanduíche para telas lg e menores */}
@@ -62,7 +61,8 @@ const Header = ({ scrollToRefs }) => {
           <Button text="Início" scrollToRef={scrollToRefs.homeRef} />
           <Button text="Experiência" scrollToRef={scrollToRefs.consultsRef} />
           <Button text="Sobre mim" scrollToRef={scrollToRefs.aboutMeRef} />
-          <Button text="Perguntas frequentes" scrollToRef={scrollToRefs.faqRef} />
+          <Button text="F.A.Q" scrollToRef={scrollToRefs.faqRef} />
+          <Button text="Consultório" scrollToRef={scrollToRefs.faqRef} />
         </div>
       </div>
     </nav>

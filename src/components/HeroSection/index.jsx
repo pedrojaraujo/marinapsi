@@ -40,8 +40,9 @@ const HeroSection = () => {
       </div>
       <div className="container__text__herosec w-full flex justify-center items-center lg:w-1/2 lg:h-full">
         <Banner
-          title="Psicanálise para uma Jornada Racial Positiva"
-          text="Explore a jornada para o autoconhecimento e cura emocional. Agende sua sessão e inicie sua jornada de transformação hoje mesmo com uma psicanalista dedicada a questões raciais."
+          title="Um convite para a desvendar o inconsciente"
+          text="
+          Sou psicóloga e psicanalista, especializada no atendimento clínico de adultos e adolescentes.Convido você a explorar o inconsciente, falar sobre seus sintomas e nomear aquilo que pode estar mobilizando a sua angústia."
         />
       </div>
     </section>
